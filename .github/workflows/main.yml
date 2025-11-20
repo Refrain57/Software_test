@@ -19,5 +19,5 @@ jobs:
       - run: pip install -r requirements.txt
         # 在指定子目录下寻找 requirements.txt
         
-      - run: pytest --html=report.html --self-contained-html
+      - run: python -m pytest test
         # 在指定子目录下运行测试
